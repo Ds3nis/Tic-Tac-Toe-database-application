@@ -32,6 +32,9 @@ CREATE TABLE hrac
 ALTER TABLE hrac 
     ADD CONSTRAINT hrac_PK PRIMARY KEY ( hrac_id ) ;
 
+ALTER TABLE hrac 
+    ADD CONSTRAINT hrac_jmeno_UN UNIQUE ( jmeno ) ;
+
 CREATE TABLE omezeni 
     ( 
      omezeni_id  NUMBER  NOT NULL , 
